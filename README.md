@@ -29,15 +29,16 @@ In order to get service, you need to have API_KEY, so you can have the API with 
         '''
 4. If everything installed succesfully than you could run the app by typing: 
 
-        uvicorn storeapi.main:app --reload --host 0.0.0.0 --port 2525 \
+        uvicorn storeapi.main:app --reload --host 0.0.0.0 --port 2525 
 
 5. You can check the interactive API document, by hiting:
     
-    http://127.0.0.1:8000/docs \
+    http://127.0.0.1:8000/docs 
 
 #### Runing The File(With Docker)
 
 1. Clone the repository:
+
         '''
         git clone https://github.com/Alperemrehas/weather-api.git \
         cd weather-api \
@@ -50,10 +51,10 @@ In order to get service, you need to have API_KEY, so you can have the API with 
 
 3. Endpoints
 
-        http://localhost:2525/cities \
-        http://localhost:2525/weather/Ankara \
-        http://localhost:2525/forecast/London?nextdays=4 \
-        http://localhost:2525/history/Ankara?country=TR&prev=1 \
+        http://localhost:2525/cities 
+        http://localhost:2525/weather/Ankara 
+        http://localhost:2525/forecast/London?nextdays=4 
+        http://localhost:2525/history/Ankara?country=TR&prev=1 
 
 4. In order to run the test, during the time app is up and running you have to open a new terminal and run the code:
          '''
