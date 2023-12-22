@@ -66,7 +66,7 @@ In order to get service, you need to have API_KEY, so you can have the API with 
 
         uvicorn storeapi.main:app --reload --host 0.0.0.0 --port 2525 
 
-5. You can check the interactive API document, by hiting:
+5. You can check the interactive API document, by hiting :
     
     http://127.0.0.1:8000/docs 
 
