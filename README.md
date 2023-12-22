@@ -26,10 +26,10 @@ In order to get service, you need to have API_KEY, so you can have the API with 
 
 3. Now you need to install the requriments, in order to do this we recomend to use a virtual env.(eg.: pyhton -m venv .venv)
 
-        '''
+        
         pip install -r requirments.txt
         pip install -r requirments-dev.txt
-        '''
+        
 4. If everything installed succesfully than you could run the app by typing: 
 
         uvicorn storeapi.main:app --reload --host 0.0.0.0 --port 2525 
@@ -42,16 +42,16 @@ In order to get service, you need to have API_KEY, so you can have the API with 
 
 1. Clone the repository:
 
-        '''
+        
         git clone https://github.com/Alperemrehas/weather-api.git 
         cd weather-api 
-        '''
+        
 
 2. Please make ready the API_KEY and create a .env file it the weather_api directory and add your API_KEYs. You can get help from .env.example file.
 
-        '''
+        
         docker compose up 
-        '''
+        
 
 3. Endpoints
 
@@ -61,6 +61,6 @@ In order to get service, you need to have API_KEY, so you can have the API with 
         http://localhost:2525/history/Ankara?country=TR&prev=1 
 
 4. In order to run the test, during the time app is up and running you have to open a new terminal and run the code:
-         '''
+         
         docker exec -it weather-api-web python -m pytest -v
-        '''
+        
