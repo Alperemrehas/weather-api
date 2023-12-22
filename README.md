@@ -13,6 +13,38 @@ In order to get service, you need to have API_KEY, so you can have the API with 
 
 ### Installation and Running
 
+#### Runing The File(With Docker)
+
+1. Clone the repository:
+
+        
+        git clone https://github.com/Alperemrehas/weather-api.git 
+        cd weather-api 
+        
+
+2.  Create .env file in the weather_api directory and add write your API_KEYs to .env file. You can get help from .env.example file.
+
+        
+        API_KEY= "YOUR API KEY"
+        API_KEY_HISTORY= "YOUR API KEY"
+        
+3.  Now buil your docker container.
+
+        
+        docker compose up
+
+3. Endpoints
+
+        http://localhost:2525/cities 
+        http://localhost:2525/weather/Ankara 
+        http://localhost:2525/forecast/London?nextdays=4 
+        http://localhost:2525/history/Ankara?country=TR&prev=1 
+
+4. In order to run the test, during the time app is up and running you have to open a new terminal and run the code:
+         
+        docker exec -it weather-api-web python -m pytest -v
+        
+
 #### Runing The File(Without Docker)
 
 1. Clone the repository:
@@ -38,29 +70,3 @@ In order to get service, you need to have API_KEY, so you can have the API with 
     
     http://127.0.0.1:8000/docs 
 
-#### Runing The File(With Docker)
-
-1. Clone the repository:
-
-        
-        git clone https://github.com/Alperemrehas/weather-api.git 
-        cd weather-api 
-        
-
-2. Please make ready the API_KEY and create a .env file it the weather_api directory and add your API_KEYs. You can get help from .env.example file.
-
-        
-        docker compose up 
-        
-
-3. Endpoints
-
-        http://localhost:2525/cities 
-        http://localhost:2525/weather/Ankara 
-        http://localhost:2525/forecast/London?nextdays=4 
-        http://localhost:2525/history/Ankara?country=TR&prev=1 
-
-4. In order to run the test, during the time app is up and running you have to open a new terminal and run the code:
-         
-        docker exec -it weather-api-web python -m pytest -v
-        
