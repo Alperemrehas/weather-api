@@ -1,7 +1,8 @@
 from sqlalchemy import create_engine, exc
 from sqlalchemy.orm import declarative_base, sessionmaker
 
-# Define the database URL
+# Define the database URL (Sending credidantels is not a best practice, but since the db is
+
 SQLALCHEMY_DATABASE_URL = "postgresql://vifrtrry:psAJrlVPwhmVpQu1MY7zo77dlLqp1Xor@bubble.db.elephantsql.com/vifrtrry"
 
 # Create the SQLAlchemy engine

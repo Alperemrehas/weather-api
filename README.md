@@ -28,7 +28,7 @@ In order to get service, you need to have API_KEY, so you can have the API with 
         API_KEY= "YOUR API KEY"
         API_KEY_HISTORY= "YOUR API KEY"
         
-3.  Now buil your docker container.
+3.  Now build your docker container.
 
         
         docker compose up
@@ -40,9 +40,9 @@ In order to get service, you need to have API_KEY, so you can have the API with 
         http://localhost:2525/forecast/London?nextdays=4 
         http://localhost:2525/history/Ankara?country=TR&prev=1 
 
-4. In order to run the test, during the time app is up and running you have to open a new terminal and run the code:
+4. In order to run the test, while the app is up and running, you have to open a new terminal and run the code:
          
-        docker exec -it weather-api-web python -m pytest -v
+        docker exec -it weather-api-web-1 python -m pytest -v
         
 
 #### Runing The File(Without Docker)
