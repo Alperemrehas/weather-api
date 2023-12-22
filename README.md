@@ -59,8 +59,8 @@ In order to get service, you need to have API_KEY, so you can have the API with 
 3. Now you need to install the requriments, in order to do this we recomend to use a virtual env.(eg.: pyhton -m venv .venv)
 
         
-        pip install -r requirments.txt
-        pip install -r requirments-dev.txt
+        pip install -r requirements.txt
+        pip install -r requirements-dev.txt
         
 4. If everything installed succesfully than you could run the app by typing: 
 
